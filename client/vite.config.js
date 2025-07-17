@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:5000",
+        target: "https://threemtt-dareyio-capstone-project.onrender.com",
         changeOrigin: true,
         secure: false,
       }

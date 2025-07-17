@@ -69,10 +69,10 @@ npm run dev (from /server)
 - Live Site URL: [akin-holo-movie-recommendation-app](https://akin-holo-movie-recommendation-app.netlify.app/)
 
 ## Author
-> Akinseloyin Holo
-> Fellow ID - FE/23/55210926
-> Software Development
-> Cohort 3
+Akinseloyin Holo
+Fellow ID - FE/23/55210926
+Software Development
+Cohort 3
 
 
 
