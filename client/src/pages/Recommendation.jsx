@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import MovieCard from '../components/MovieCard';
-import "../styles/Recommendations.css";
+import "../styles/Recommendations.css"
 
 const Recommendations = () => {
   const [movies, setMovies] = useState([]);

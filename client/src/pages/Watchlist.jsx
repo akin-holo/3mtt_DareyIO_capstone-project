@@ -6,6 +6,7 @@ import "../styles/Watchlist.css"
 const Watchlist = () => {
    const [movies, setMovies] = useState([]);
    const [loading, setLoading] = useState(true);
+   const [error, setError] = useState("");
 
    useEffect(() => {
       
@@ -35,31 +36,33 @@ const Watchlist = () => {
          });
          setMovies(res.data); // updated list
       } catch (err) {
-         console.error(err);
+         setError('Unable to load watchlist. Try again later.');
       }
+
    };
 
    return (
       <div className="watchlist-page">
-      <h2>📌 Your Watchlist</h2>
+         <h2>📌 Your Watchlist</h2>
 
-      {loading ? (
-        <p>Loading...</p>
-      ) : (
-        <div className="movie-grid">
-          {movies.length > 0 ? (
-            movies.map(movie => (
-              <div key={movie.id} className="watchlist-item">
-                <MovieCard movie={movie} />
-                <button onClick={() => handleRemove(movie.id)}>🗑️ Remove</button>
-              </div>
-            ))
-          ) : (
+         {loading ? (
+            <p>Loading...</p>
+         ) : (
+         <div className="movie-grid">
+            {movies.length > 0 ? (
+               movies.map(movie => (
+                  <div key={movie.id} className="watchlist-item">
+                     <MovieCard movie={movie} />
+                     <button onClick={() => handleRemove(movie.id)}>🗑️ Remove</button>
+                  </div>
+               ))
+            ) : (
             <p>No movies saved yet. Go explore!</p>
-          )}
-        </div>
-      )}
-    </div>
+            )}
+         </div>
+         )}
+         {error && <p style={{ color: 'red' }}>{error}</p>}
+      </div>
    );
 };
 

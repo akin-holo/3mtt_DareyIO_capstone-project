@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Navigate, BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Navigate, BrowserRouter, Routes, Route } from 'react-router-dom'
 // import reactLogo from './assets/react.svg'
 import Home from './pages/Home'
 import Navbar from './components/Navbar'
@@ -14,23 +14,19 @@ import './App.css'
 function App() {
 
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-
-      <Router>
-        <Routes>
-          <Route path='/' element={<Navigate to="/home" />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path='/movie/:id' element={<MovieDetails />} />
-          <Route path="/watchlist" element={<Watchlist />} />
-          <Route path="/favorites" element={<Favorites />} />
-          <Route path="/recommendations" element={<Recommendations />} />
-        </Routes>
-      </Router>
-      
-    </>
+      <Routes>
+        <Route path='/' element={<Navigate to="/home" />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path='/movie/:id' element={<MovieDetails />} />
+        <Route path="/watchlist" element={<Watchlist />} />
+        <Route path="/favorites" element={<Favorites />} />
+        <Route path="/recommendations" element={<Recommendations />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
