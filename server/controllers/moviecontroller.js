@@ -2,6 +2,7 @@ import { fetchTrendingMovies, searchMovies } from "../services/tmdbService.js";
 
 export const getTrending = async (req, res) => {
    try {
+      console.log('🛰️ /trending route hit');
       const movies = await fetchTrendingMovies();
       res.json(movies);
    } catch (err) {
