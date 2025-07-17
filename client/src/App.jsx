@@ -14,10 +14,11 @@ import './App.css'
 function App() {
 
   return (
-    //<>
+    <>
+      <Navbar />
+
       <Router>
         <Routes>
-          <Navbar />
           <Route path='/' element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
@@ -29,7 +30,7 @@ function App() {
         </Routes>
       </Router>
       
-    //</>
+    </>
   )
 }
 

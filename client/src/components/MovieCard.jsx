@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import "../styles/MovieCard.css"
+import "../styles/Responsive.css"
 
 const Moviecard = ({ movie }) => {
    const imageBase = "https://image.tmbd.org/t/p/w500";

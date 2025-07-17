@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import MovieCard from '../components/MovieCard';
+import "../styles/Favorites.css";
 
 const Favorites = () => {
   const [favorites, setFavorites] = useState([]);

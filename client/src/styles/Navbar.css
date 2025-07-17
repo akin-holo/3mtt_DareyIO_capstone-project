@@ -2,13 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  background-color: #111;
-  color: #fff;
+  background-color: #1a1a1a;
+  padding: 1rem 2rem;
 }
 
 .nav-links a {
-  margin: 0 1rem;
+  margin-left: 1rem;
+  color: white;
   text-decoration: none;
-  color: #f0f0f0;
+}
+
+.nav-links a:hover {
+  color: #ff3b3f;
+  transition: color 0.3s ease;
 }

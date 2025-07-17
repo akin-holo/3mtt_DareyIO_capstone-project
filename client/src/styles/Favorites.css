@@ -1,0 +1,21 @@
+.favorites-page {
+  padding: 2rem;
+}
+
+.favorite-item {
+  margin-bottom: 2rem;
+}
+
+.favorite-item button {
+  background-color: #f72585;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.favorite-item button:hover {
+  background-color: #d6336c;
+}
