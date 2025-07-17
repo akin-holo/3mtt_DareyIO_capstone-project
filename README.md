@@ -24,8 +24,9 @@ Movie Recommendation App helps users explore popular titles, build their persona
 - [Frontend] - React, Axios, Custom CSS  
 - [Backend] - Node.js, Express, MongoDB  
 - [Auth] - JWT  
-- [External API] - TMDB  
+- [ExternalAPI] - TMDB  
 - [Hosting] - Netlify (Frontend), Render (Backend)
+- [MongoDB] - Database
 
 
 ## Installation
