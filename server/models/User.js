@@ -4,7 +4,8 @@ const userSchema = new mongoose.Schema({
    username: { type: String, required: true, unique: true },
    email: { type: String, required: true, unique: true },
    password: { type: String, required: true, unique: true},
-   watchlist: [{ type: Object }]
+   watchlist: [{ type: Object }],
+   favorites: [{ type: Object }] // or just movie IDs if preferred
 }, { timestamps: true});
 
 export default mongoose.model("User", userSchema);

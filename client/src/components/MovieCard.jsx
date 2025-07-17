@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 const Moviecard = ({ movie }) => {
    const imageBase = "https://image.tmbd.org/t/p/w500";
+   
 
    return (
       <Link to={`/movie/${movie.id}`}>

@@ -37,6 +37,17 @@ const MovieDetails = () => {
       }
    };
 
+   const handleAddFavorite = async () => {
+      try {
+         await axios.post(`${import.meta.env.VITE_API_BASE}/api/users/favorites`, movie, {
+            headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
+         });
+         alert('🌟 Added to Favorites');
+      } catch (err) {
+         alert('Could not add to Favorites');
+      }
+   };
+
    return ( 
       <div className="movie-details">
          <img src={`${imageBase}${movie.poster_path}`} alt={movie.title} />
@@ -48,6 +59,9 @@ const MovieDetails = () => {
          <button onClick={handleAddToWatchlist}>
             ➕ Add to Watchlist
          </button>
+
+         <button onClick={handleAddFavorite}>❤️ Add to Favorites</button>
+
       </div>
     );
 };
