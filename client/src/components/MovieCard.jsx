@@ -3,7 +3,7 @@ import "../styles/MovieCard.css"
 import "../styles/Responsive.css"
 
 const Moviecard = ({ movie }) => {
-   const imageBase = "https://image.tmbd.org/t/p/w500";
+   const imageBase = "https://image.tmdb.org/t/p/w500";
    
 
    return (
