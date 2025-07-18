@@ -11,7 +11,15 @@ const Register = () => {
       }
    };
 
-   return <AuthForm type="registration" onSubmit={handleRegister} />
+   return (
+      <div className="register-page">
+          <AuthForm type="register" onSubmit={handleRegister} />
+         <p className="form-link">
+            Already have an account? <Link to="/login">Log in</Link>
+         </p>
+      </div>
+   )
+   
 }
 
 export default Register;

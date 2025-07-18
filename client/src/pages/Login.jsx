@@ -12,7 +12,14 @@ const Login = () => {
       }
    };
 
-   return <AuthForm type="login" onSubmit={handleLogin} />;
+   return ( 
+      <div>
+         <AuthForm type="login" onSubmit={handleLogin} />
+         <p className="form-link">
+             Don’t have an account yet? <Link to="/register">Register</Link>
+         </p>
+      </div> 
+      )
 };
 
 export default Login;
