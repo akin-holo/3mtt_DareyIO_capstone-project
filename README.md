@@ -65,7 +65,7 @@ npm run dev (from /server)
 ```
 
 ## Demo
-- screenshot: 
+- screenshot:  [screenshot](./Assets/3MTT-DareyIO_CapstoneProjectMovie%20RecommendationApp.png)
 - Solution URL: [ github ](https://github.com/akin-holo/3mtt_DareyIO_capstone-project)
 - Live Site URL: [akin-holo-movie-recommendation-app](https://akin-holo-movie-recommendation-app.netlify.app/)
 

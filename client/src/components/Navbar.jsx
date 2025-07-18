@@ -6,7 +6,7 @@ import "../styles/Responsive.css"
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h2>🎬 MovieVerse</h2>
+      <h2>🎬 Movie App</h2>
       <div className="nav-links">
         <Link to="/home">Home</Link>
         <Link to="/watchlist">Watchlist</Link>
